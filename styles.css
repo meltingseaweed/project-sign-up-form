@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    background-color: grey;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+.signup-form {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.form-left,
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline
+    
+}
