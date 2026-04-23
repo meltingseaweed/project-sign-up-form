@@ -1,29 +1,157 @@
-body {
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse.woff2') format('woff2'),
+        url('fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norsebold';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.page {
     display: flex;
-    background-color: grey;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+}
+
+.right h2 {
+    padding: 40px;
 }
 
 .header {
-    background-color: #fff;
+    background-color: #eee;
     padding-bottom: 40px;
+    padding-top: 100px;
 }
 .form-section {
     display: flex;
     flex-direction: column;
-    background-color: #eee;
+    background-color: #fff;
+    /* padding-bottom: 30px; */
 }
 .signup-form {
-    background-color: #ddd;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* padding-bottom: 30px; */
 }
 .form-left,
 .form-right {
     display: flex;
     flex-direction: column;
-    align-items: baseline
+    align-items: flex-start
     
 }
 .row-1,
 .row-2,
 .row-3 {
-    padding: 20px;
+    padding: 30px 0px 10px 50px;
+    position: relative;
+
+}
+
+.row-4 {
+    font-size: 12px;
+    color: grey;
+    padding-left: 50px;
+}
+
+.form-upper label {
+    position: absolute;
+    top: 10px;
+}
+
+.form-upper input {
+    margin-right: 40px;
+}
+
+.form-upper {
+    box-shadow: 5px, 5px, 10px, black;
+    padding-bottom: 40px;
+}
+
+.form-lower {
+    background-color: #eee;
+    padding: 40px;
+}
+
+.form-lower button {
+    padding: 40px;
+    background-color: #596d48;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.form-lower .member {
+    padding-top: 5px;
+}
+
+.member span {
+    padding: 40px;
+    color: #596d48;
+    font-weight: bold;
+}
+
+.left {
+    display: flex;
+    width: 400px;
+    background-image: url("img/fern.jpg");
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+}
+
+
+ .left .company-title {
+    background-color: #00000080;
+    color: #fff;
+    font-family: "Norsebold";
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%);
+ }
+ .left .company-title span {
+        
+ }
+
+ /* .left img {
+    position: absolute;
+ } */
+
+.reference {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: small;
+}
+
+input:invalid {
+    border: 2px dashed red;
+}
+input:valid {
+    border: 2px solid grey;
+    border-radius: 3px;
 }

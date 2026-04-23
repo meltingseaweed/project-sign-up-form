@@ -7,8 +7,14 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="page">
     <div class="left">
-        <h1>Odin placeholder</h1>
+        <div class="company-title">
+            <img src="img/odin-lined.png" width="75px" height="100px" ="An outline of the ODIN logo colored in white">
+            <span>Odin</span>
+        </div>
+        <span class="reference">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </span>
     </div>
 
     <div class="right">
@@ -37,18 +43,22 @@
                     </div>
                     <div class="row-3">
                         <label for="password-1">password</label>
-                        <input type="password" name="password-1" id="password-1">
-                        <label for="password-2">password</label>
-                        <input type="password" name="password-2" id="password-2">
+                        <input type="password" name="password-1" id="password-1" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                        <label for="password-2">confirm password</label>
+                        <input type="password" name="password-2" id="password-2" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                     </div>
+                    <div class="row-4">
+                        <span>Password mush have at least 8 characters, 1 number, and 1 letter</span>
+                    </div>
+
                 </div>
                 <div class="form-lower">
                     <button type="submit" class="create">Create Account</button>
-                    <div class="member">Already have an account? <em>Log in</em></div>
+                    <div class="member">Already have an account? <span>Log in</span></div>
                 </div>
             </form>
         </div>
     </div>
-    
+    </div>
 </body>
 </html>
