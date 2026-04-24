@@ -42,6 +42,7 @@ a {
     background-color: #fff;
     /* padding-bottom: 30px; */
 }
+
 .signup-form {
     background-color: #fff;
     display: flex;
@@ -64,7 +65,8 @@ a {
 
 }
 
-.row-4 {
+.row-4,
+.form-section p {
     font-size: 12px;
     color: grey;
     padding-left: 50px;
@@ -148,10 +150,10 @@ a {
     font-size: small;
 }
 
-input:invalid {
+:user-invalid:invalid {
     border: 2px dashed red;
 }
-input:valid {
+:user-valid:valid {
     border: 2px solid grey;
     border-radius: 3px;
 }
